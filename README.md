@@ -2,6 +2,14 @@
 
 A simple CLI tool for managing file templates. It allows you to save custom file templates and quickly generate new files from them in any directory.
 
+## Install
+
+To install globally, use:
+
+```bash
+npm install -g tmpl8r
+```
+
 ## Usage
 
 ```js
