@@ -2,11 +2,11 @@
 
 A simple CLI application that allows you to save templates of files and create files based on those templates in any directory with any name.
 
-#### Usage
+## Usage
 
 fileTemplater [command]
 
-#### Commands:
+## Commands:
 
 createTemplate          Create a new template
 templates               List all available templates
