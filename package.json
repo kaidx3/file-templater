@@ -1,7 +1,7 @@
 {
   "name": "tmpl8r",
   "type": "module",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "A simple CLI application that allows you to save templates of files and create files based on those templates in any directory with any name.",
   "main": "./src/cli.js",
   "bin": {                           
