@@ -1,4 +1,4 @@
-﻿# file-templater
+﻿# tmpl8r
 
 A simple CLI tool for managing file templates. It allows you to save custom file templates and quickly generate new files from them in any directory.
 
