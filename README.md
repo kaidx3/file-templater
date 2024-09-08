@@ -5,7 +5,7 @@ A simple CLI tool for managing file templates. It allows you to save custom file
 ## Usage
 
 ```js
-fileTemplater [command]
+tmpl8r [command]
 ```
 
 ## Commands:
