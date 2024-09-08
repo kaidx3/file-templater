@@ -1,7 +1,8 @@
 import fs from "fs";
 import { exitWithCode, readLine } from "./utils.js";
 
-const jsonPath = "../templates.json";
+const modulePath = path.dirname(require.resolve("tmpl8r"));
+const jsonPath = path.join(modulePath, "templates.json");
 
 const confirmOverwrite = async () => {
     const shouldContinue = await readLine(
