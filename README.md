@@ -1,6 +1,6 @@
 ﻿# file-templater
 
-A simple CLI application that allows you to save templates of files and create files based on those templates in any directory with any name.
+A simple CLI tool for managing file templates. It allows you to save custom file templates and quickly generate new files from them in any directory.
 
 ## Usage
 
