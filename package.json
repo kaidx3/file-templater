@@ -1,33 +1,33 @@
 {
-  "name": "file-templater",
+  "name": "tmpl8r",
   "type": "module",
   "version": "1.0.0",
   "description": "A simple CLI application that allows you to save templates of files and create files based on those templates in any directory with any name.",
-  "main": "./src/fileTemplaterCLI.js",
+  "main": "./src/cli.js",
   "bin": {                           
-    "file-templater": "./src/fileTemplaterCLI.js"
+    "tmpl8r": "./src/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "fileTemplater": "node ./src/fileTemplaterCLI.js"
+    "tmpl8r": "node ./src/fileTemplaterCLI.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaidx3/file-templater.git"
+    "url": "git+https://github.com/kaidx3/tmpl8r.git"
   },
   "keywords": [
     "files",
     "templates",
     "templater",
     "file",
-    "templates"
+    "template"
   ],
   "author": "Kaiden Flaig",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaidx3/file-templater/issues"
+    "url": "https://github.com/kaidx3/tmpl8r/issues"
   },
-  "homepage": "https://github.com/kaidx3/file-templater#readme",
+  "homepage": "https://github.com/kaidx3/tmpl8r#readme",
   "devDependencies": {
   }
 }
