@@ -1,0 +1,33 @@
+{
+  "name": "file-templater",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A simple CLI application that allows you to save templates of files and create files based on those templates in any directory with any name.",
+  "main": "./src/fileTemplaterCLI.js",
+  "bin": {                           
+    "file-templater": "./src/fileTemplaterCLI.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "fileTemplater": "node ./src/fileTemplaterCLI.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaidx3/file-templater.git"
+  },
+  "keywords": [
+    "files",
+    "templates",
+    "templater",
+    "file",
+    "templates"
+  ],
+  "author": "Kaiden Flaig",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaidx3/file-templater/issues"
+  },
+  "homepage": "https://github.com/kaidx3/file-templater#readme",
+  "devDependencies": {
+  }
+}
