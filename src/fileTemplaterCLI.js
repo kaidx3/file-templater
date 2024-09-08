@@ -13,6 +13,7 @@ const createTemplate = async () => {
     do {
         try {
             templateFilePath = await readLine("Please enter the template file path: ");
+            templateFilePath = templateFilePath.replace(/^['"]|['"]$/g, "");
 
             if (!(await pathExists(templateFilePath))) {
                 console.log(styledText("The specified path is not a valid file.", colors.red, false));
@@ -58,7 +59,7 @@ const displayTemplates = async () => {
 const deleteTemplate = async () => {
     const { saveTemplates, getStoredTemplates } = await import("./fileService.js");
     const templates = await getStoredTemplates();
-    const isTemplateNameValid = false;
+    let isTemplateNameValid = false;
 
     if (templates.length > 0) {
         displayTemplateTable(templates);
@@ -75,6 +76,7 @@ const deleteTemplate = async () => {
 
                 try {
                     await saveTemplates(templates);
+                    isTemplateNameValid = true;
                 } catch (err) {
                     throw new Error(err.message);
                 }

@@ -78,7 +78,8 @@ const createFileFromTemplate = async (template, currentDirectory) => {
 
 const pathExists = async (path) => {
     try {
-        return (await fs.promises.access(path)) && fs.lstatSync(path).isFile();
+        await fs.promises.access(path, fs.constants.F_OK);
+        return (await fs.promises.lstat(path)).isFile();
     } catch (err) {
         throw new Error(`Error checking path.`);
     }
