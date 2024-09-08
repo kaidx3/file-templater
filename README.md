@@ -10,11 +10,20 @@ fileTemplater [command]
 
 ## Commands:
 
--  ## createTemplate ##         Create a new template
-- templates               List all available templates
-- deleteTemplate          Delete a template
-- createFile              Create a file from a template in the current directory
-- help                    Display this help message
+- **createTemplate**  
+  Create a new template by specifying a template file path and name.
+
+- **templates**  
+  List all available templates saved in the system.
+
+- **deleteTemplate**  
+  Delete a template by selecting it from the list of saved templates.
+
+- **createFile**  
+  Create a file from a selected template in the current directory.
+
+- **help**  
+  Display the help message with information about the available commands.
 
 Each command will open a prompt to guide you through the process.
 
