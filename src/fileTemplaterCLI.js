@@ -121,11 +121,12 @@ const displayHelp = () => {
         "    fileTemplater [command]\n\n" +
         styledText("Commands:", colors.bold, true) +
         "\n" +
-        "    createTemplate          Create a new template\n" +
-        "    templates               List all available templates\n" +
-        "    deleteTemplate          Delete a template by name\n" +
-        "    createFile              Create a file from a template in the current directory\n" +
-        "    help                    Display this help message\n\n";
+        "    createTemplate          Create a new template by specifying a template file path and name.\n" +
+        "    templates               List all available templates saved in the system.\n" +
+        "    deleteTemplate          Delete a template by selecting it from the list of saved templates.\n" +
+        "    createFile              Create a file from a selected template in the current directory.\n" +
+        "    help                    Display the help message with information about the available commands.\n\n" +
+        "Each command will open a prompt to guide you through the process.";
 
     console.log(helpMessage);
 };
