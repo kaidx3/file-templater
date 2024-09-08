@@ -10,7 +10,7 @@ fileTemplater [command]
 
 ## Commands:
 
-- createTemplate          Create a new template
+-  ## createTemplate ##         Create a new template
 - templates               List all available templates
 - deleteTemplate          Delete a template
 - createFile              Create a file from a template in the current directory
