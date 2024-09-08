@@ -4,7 +4,9 @@ A simple CLI application that allows you to save templates of files and create f
 
 ## Usage
 
+''' js
 fileTemplater [command]
+'''
 
 ## Commands:
 
