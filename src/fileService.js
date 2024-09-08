@@ -1,7 +1,11 @@
 import fs from "fs";
 import { exitWithCode, readLine } from "./utils.js";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const modulePath = path.dirname(require.resolve("tmpl8r"));
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const modulePath = path.join(__dirname);
 const jsonPath = path.join(modulePath, "templates.json");
 
 const confirmOverwrite = async () => {
@@ -23,8 +27,11 @@ const confirmOverwrite = async () => {
 const saveTemplates = async (templates) => {
     try {
         const filteredTemplates = templates.filter((template) => fs.existsSync(template.path));
+        console.log(filteredTemplates);
+        console.log(jsonPath);
         await fs.promises.writeFile(jsonPath, JSON.stringify(filteredTemplates));
     } catch (err) {
+        console.log(err);
         throw new Error("An error occurred while saving the template.");
     }
 };
